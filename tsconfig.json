@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
+    "types": ["styled-components"],
     "baseUrl": ".",
     "paths": {
-      "@*":["src/*"]
+      "@*": ["src/*"]
     }
   },
   "files": [],
