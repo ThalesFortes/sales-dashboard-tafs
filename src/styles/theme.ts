@@ -4,7 +4,7 @@ export const lightTheme: Theme = {
   appBackground: "#FFF",
   appColor: "#000",
   appDefaultStroke: "#E0E0E0",
-  appLogo: "peace-forge-logo.png",
+  appLogo: "dnc-logo-white.svg",
   appSkeletonFrom: "#EEE",
   appSkeletonTo: "#CCC",
   buttons: {
@@ -44,7 +44,7 @@ export const darkTheme: Theme = {
   appBackground: "#060B28",
   appColor: "#FFF",
   appDefaultStroke: "#21497D",
-  appLogo: "peace-forge-logo.png",
+  appLogo: "dnc-logo-black.svg",
   appSkeletonFrom: "#060B28",
   appSkeletonTo: "#21497D",
   buttons: {
