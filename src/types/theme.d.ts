@@ -25,6 +25,13 @@ declare module "styled-components" {
       disabledColor: string
       placeholderColor: string
     }
+    card: {
+      alert: string
+      background: string
+      border: string
+      sucess: string
+      warning: string
+    }
   }
 }
 
