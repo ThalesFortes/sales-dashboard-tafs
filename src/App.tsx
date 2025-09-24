@@ -9,7 +9,7 @@ function App() {
         <Route path="/register" element={<Registration />} />
         <Route path="/home" element={<Home />} />
         <Route path="/leads" element={<Leads />} />
-        <Route path="/profiles" element={<Profile />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </BrowserRouter>
   )
