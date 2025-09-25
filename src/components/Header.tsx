@@ -5,9 +5,9 @@ import { Link } from "react-router-dom"
 import { Logo } from "@/components"
 
 const StyledHeader = styled.header`
-  background-color: ${(props) => props.theme.appBackground}
-  border-bottom: ${pxToRem(1)} solid ${(props) => props.theme.appDefaultStroke}
-  margin-bottom: ${pxToRem(37)}
+  background-color: ${(props) => props.theme.appBackground};
+  border-bottom: ${pxToRem(1)} solid ${(props) => props.theme.appDefaultStroke};
+  margin-bottom: ${pxToRem(37)};
   width: 100%;
 `
 function Header() {

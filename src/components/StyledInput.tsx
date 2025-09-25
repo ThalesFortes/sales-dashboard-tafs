@@ -23,6 +23,6 @@ export const StyledInput = styled.input<InputProps>`
   cursor: not-allowed;
 
   &::placeholder{
-    color: ${(props) => props.theme.textInput.placeholderColor}
+    color: ${(props) => props.theme.textInput.placeholderColor};
   }
 `
