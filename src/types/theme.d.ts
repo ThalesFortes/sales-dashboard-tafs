@@ -32,6 +32,11 @@ declare module "styled-components" {
       sucess: string
       warning: string
     }
+    typographies: {
+      error: string
+      subtitle: string
+      success: string
+    }
   }
 }
 
