@@ -6,6 +6,8 @@ declare module "styled-components" {
     appColor: string
     appLogo: string
     appDefaultStroke: string
+    appSkeletonFrom: string
+    appSkeletonTo: string
     buttons: {
       alert: string
       alertColor: string
