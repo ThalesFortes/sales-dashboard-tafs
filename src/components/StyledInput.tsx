@@ -17,7 +17,7 @@ export const StyledInput = styled.input<InputProps>`
   width: 100%;
 
   &:disabled{
-  background-color: ${(props) => props.theme.textInput.disabled};
+  background-color: ${(props) => props.theme.textInput.disabledBorderColor};
   border: ${pxToRem(1)} solid ${(props) => props.theme.textInput.disabledBorderColor};
   color: ${(props) => props.theme.textInput.disabled};
   cursor: not-allowed;
