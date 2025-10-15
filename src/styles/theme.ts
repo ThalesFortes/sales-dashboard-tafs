@@ -28,7 +28,7 @@ export const lightTheme: Theme = {
     active: "#FFF",
     activeColor: "#000",
     borderColor: "#E0E0E0",
-    disabled: "#EEE",
+    disabled: "#666",
     disabledBorderColor: "#E0E0E0",
     disabledColor: "#666",
     placeholderColor: "#666",
