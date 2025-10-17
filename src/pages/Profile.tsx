@@ -31,13 +31,13 @@ function Profile() {
 
   // HOOKS
   const [updateMessage, setUpdateMessage] = useState<MessageProps>({
-    type: "sucess",
+    type: "success",
     msg: "",
   })
   const clearMessage = () => {
     setTimeout(() => {
       setUpdateMessage({
-        type: "sucess",
+        type: "success",
         msg: "",
       })
     }, 3000)
@@ -103,7 +103,7 @@ function Profile() {
     if (profileUpdateData !== null) {
       setUpdateMessage({
         msg: "Perfil atualizado com sucesso",
-        type: "sucess",
+        type: "success",
       })
     } else if (profileUpdateError) {
       setUpdateMessage({
