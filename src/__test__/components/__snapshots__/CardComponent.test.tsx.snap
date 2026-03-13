@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`CardComponent Dark Theme should match the snapshot with alert class 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-dTvVRJ dvsfwA alert"
+  />
+</DocumentFragment>
+`;
+
+exports[`CardComponent Dark Theme should match the snapshot with success class 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-dTvVRJ dvsfwA success"
+  />
+</DocumentFragment>
+`;
+
+exports[`CardComponent Dark Theme should match the snapshot with warning class 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-dTvVRJ dvsfwA warning"
+  />
+</DocumentFragment>
+`;
+
+exports[`CardComponent Dark Theme should match the snapshot without any class 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-dTvVRJ dvsfwA"
+  />
+</DocumentFragment>
+`;
+
+exports[`CardComponent Light Theme should match the snapshot with alert class 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-dTvVRJ dVXMKO alert"
+  />
+</DocumentFragment>
+`;
+
+exports[`CardComponent Light Theme should match the snapshot with success class 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-dTvVRJ dVXMKO success"
+  />
+</DocumentFragment>
+`;
+
+exports[`CardComponent Light Theme should match the snapshot with warning class 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-dTvVRJ dVXMKO warning"
+  />
+</DocumentFragment>
+`;
+
+exports[`CardComponent Light Theme should match the snapshot without any class 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-dTvVRJ dVXMKO"
+  />
+</DocumentFragment>
+`;
