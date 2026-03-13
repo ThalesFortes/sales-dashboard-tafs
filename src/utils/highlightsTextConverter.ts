@@ -9,7 +9,7 @@ export function highlightTextConverter(text: string): string {
     case "alert":
       return "* Meta longe de ser batida"
     case "success":
-      return "* A meta do Mês foi batida! Parabéns!"
+      return "* A meta do mês foi batida! Parabéns!"
     case "warning":
       return "* Falta pouco, vamos lá!"
     default:
