@@ -1,9 +1,13 @@
 {
   "compilerOptions": {
+    "types": ["styled-components", "jest", "node"],
+    "typeRoots": ["./src/types", ".node_modules/@types"],
     "baseUrl": ".",
     "paths": {
-      "@*":["src/*"]
-    }
+      "@/*": ["src/*"]
+    },
+    "esModuleInterop": true,
+    "jsx": "react-jsx"
   },
   "files": [],
   "references": [

@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`StyledButton Dark Theme should match the snapshot with alert class 1`] = `
+<DocumentFragment>
+  <button
+    class="sc-hjsuWn gWoCUx alert"
+  />
+</DocumentFragment>
+`;
+
+exports[`StyledButton Dark Theme should match the snapshot with borderless-alert class 1`] = `
+<DocumentFragment>
+  <button
+    class="sc-hjsuWn gWoCUx borderless-alert"
+  />
+</DocumentFragment>
+`;
+
+exports[`StyledButton Dark Theme should match the snapshot with disabled status 1`] = `
+<DocumentFragment>
+  <button
+    class="sc-hjsuWn gWoCUx primary"
+    disabled=""
+  />
+</DocumentFragment>
+`;
+
+exports[`StyledButton Dark Theme should match the snapshot with primary class 1`] = `
+<DocumentFragment>
+  <button
+    class="sc-hjsuWn gWoCUx primary"
+  />
+</DocumentFragment>
+`;
+
+exports[`StyledButton Light Theme should match the snapshot with alert class 1`] = `
+<DocumentFragment>
+  <button
+    class="sc-hjsuWn jIIZXR alert"
+  />
+</DocumentFragment>
+`;
+
+exports[`StyledButton Light Theme should match the snapshot with borderless-alert class 1`] = `
+<DocumentFragment>
+  <button
+    class="sc-hjsuWn jIIZXR borderless-alert"
+  />
+</DocumentFragment>
+`;
+
+exports[`StyledButton Light Theme should match the snapshot with disabled status 1`] = `
+<DocumentFragment>
+  <button
+    class="sc-hjsuWn jIIZXR primary"
+    disabled=""
+  />
+</DocumentFragment>
+`;
+
+exports[`StyledButton Light Theme should match the snapshot with primary class 1`] = `
+<DocumentFragment>
+  <button
+    class="sc-hjsuWn jIIZXR primary"
+  />
+</DocumentFragment>
+`;
