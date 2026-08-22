@@ -32,19 +32,19 @@ function Home() {
     data: highlightsData,
     loading: highlightsLoading,
     error: highlightsError,
-  } = useGet<HighlightsData[]>("sales/highlights")
+  } = useGet<HighlightsData[]>("sales/highlights", undefined, 5000)
 
   const {
     data: salesMonthData,
     loading: salesMonthLoading,
     error: salesMonthError,
-  } = useGet<CustomChartProps>("sales/month")
+  } = useGet<CustomChartProps>("sales/month", undefined, 5000)
 
   const {
     data: salesStarsData,
     loading: salesStarsLoading,
     error: salesStarsError,
-  } = useGet<StarsData[]>("sales/stars")
+  } = useGet<StarsData[]>("sales/stars", undefined, 5000)
 
   const {
     data: newsData,
@@ -56,7 +56,7 @@ function Home() {
     data: salesYearData,
     loading: salesYearLoading,
     error: salesYearError,
-  } = useGet<CustomChartProps>("sales/year")
+  } = useGet<CustomChartProps>("sales/year", undefined, 5000)
 
   return (
     <>
@@ -204,7 +204,7 @@ function Home() {
                       headers={["Título", "Horário"]}
                       rows={newsData.map((news) => [
                         <a
-                          className="ellipsis ellipsis-sm"
+                          className="ellipsis ellipsis-xs"
                           href={news.link}
                           target="_blank"
                         >

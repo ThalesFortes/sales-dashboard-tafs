@@ -21,7 +21,7 @@ describe('Check if create profile page renders the correct components', () => {
   })
 
   it('should display news', () => {
-    cy.get('#news').should('be.visible')
+    cy.get('#news-goals').should('be.visible')
   })
 
   it('should display total year sales chart', () => {

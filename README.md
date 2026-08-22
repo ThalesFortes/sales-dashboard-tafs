@@ -34,6 +34,12 @@ personalizável e cobertura de testes automatizados (unitários, snapshot e end-
 > 💡 **Nota:** projeto autoral desenvolvido como estudo de caso de uma plataforma
 > SaaS real, com foco em qualidade de engenharia e experiência de produto de ponta a ponta.
 
+> 🔌 **API mockada:** o backend original era uma API de prática usada durante um
+> bootcamp e foi desativado. Para o projeto continuar 100% funcional como peça de
+> portfólio, todas as chamadas HTTP são interceptadas no próprio client
+> (`axios-mock-adapter`, ver `src/mocks/`), com dados persistidos em `localStorage`.
+> Não é necessário nenhum backend rodando — basta `npm install && npm run dev`.
+
 <!-- Dica: adicione aqui um GIF ou screenshot do dashboard para causar impacto imediato.
      ![Preview](./public/preview.png) -->
 
@@ -130,15 +136,19 @@ cd sales-dashboard-tafs
 # 2. Instale as dependências
 npm install
 
-# 3. Configure as variáveis de ambiente
-#    Crie um arquivo .env na raiz com:
-echo "VITE_API_BASE_URL=<url_da_sua_api>" > .env
-
-# 4. Suba o ambiente de desenvolvimento
+# 3. Suba o ambiente de desenvolvimento (já usa a API mockada por padrão)
 npm run dev
 ```
 
-A aplicação ficará disponível em `http://localhost:5173`.
+A aplicação ficará disponível em `http://localhost:5173`. Use o login de demonstração
+`tester_cypress@dnc.com.br` / `@DNCReact178#` (ou cadastre uma conta nova).
+
+Se um dia quiser plugar um backend real, edite o `.env`:
+
+```bash
+VITE_API_BASE_URL=<url_da_sua_api>
+VITE_USE_MOCK_API=false
+```
 
 ### Scripts disponíveis
 

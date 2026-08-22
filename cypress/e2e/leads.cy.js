@@ -1,9 +1,9 @@
 const { createDynamicMiddleware } = require("@reduxjs/toolkit")
 
-describe('Check if create profile page renders the correct components', () => {
+describe('Check if leads page renders the correct components', () => {
   beforeEach(() => {
     cy.login('tester_cypress@dnc.com.br', '@DNCReact178#')
-    cy.visit("http://localhost:5173/profile")
+    cy.visit("http://localhost:5173/leads")
   })
 
   it('should display leads form', () => {

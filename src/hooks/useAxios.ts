@@ -1,10 +1,15 @@
 import { useState, useEffect } from "react"
 import axios, { type AxiosRequestConfig } from "axios"
 import Cookies from "js-cookie"
+import { setupMockApi } from "@/mocks/handlers"
 
 const axioInstance = axios.create({
   baseURL: `${import.meta.env.VITE_API_BASE_URL}/`,
 })
+
+if (import.meta.env.VITE_USE_MOCK_API !== "false") {
+  setupMockApi(axioInstance)
+}
 
 export const usePost = <T, P>(endpoint: string, withAuth: boolean) => {
   const [data, setData] = useState<T | null>(null)
@@ -43,14 +48,20 @@ export const usePost = <T, P>(endpoint: string, withAuth: boolean) => {
   return { data, loading, error, postData }
 }
 
-export const useGet = <T>(endpoint: string, config?: AxiosRequestConfig) => {
+export const useGet = <T>(
+  endpoint: string,
+  config?: AxiosRequestConfig,
+  pollMs?: number
+) => {
   const [data, setData] = useState<T | null>(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<number | null>(null)
 
-  const getData = async () => {
-    setData(null)
-    setLoading(true)
+  const getData = async (silent = false) => {
+    if (!silent) {
+      setData(null)
+      setLoading(true)
+    }
     setError(null)
 
     try {
@@ -67,13 +78,19 @@ export const useGet = <T>(endpoint: string, config?: AxiosRequestConfig) => {
     } catch (e: any) {
       setError(e.response.status ?? 500)
     } finally {
-      setLoading(false)
+      if (!silent) setLoading(false)
     }
   }
 
   useEffect(() => {
     getData()
-  }, [])
+
+    if (!pollMs) return
+
+    const intervalId = setInterval(() => getData(true), pollMs)
+    return () => clearInterval(intervalId)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [endpoint, pollMs])
 
   return { data, loading, error, getData }
 }

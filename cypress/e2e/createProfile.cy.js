@@ -1,6 +1,6 @@
 describe('Check if create profile page renders the correct components', () => {
   beforeEach(() => {
-    cy.visit("http://localhost:5173/cadastro")
+    cy.visit("http://localhost:5173/register")
   })
 
   it('should steps 1 and 2 works', () => {
