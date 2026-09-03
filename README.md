@@ -57,7 +57,7 @@ personalizável e cobertura de testes automatizados (unitários, snapshot e end-
   de formulário em tempo real.
 - **Perfil do usuário**: visualização e atualização dos dados da conta.
 - **Tema claro/escuro**: alternância de temas com Context API e styled-components.
-- **Validação inteligente de formulários** — regras de e-mail e senha forte
+- **Validação inteligente de formulários**: regras de e-mail e senha forte
   (comprimento, maiúscula, número e caractere especial) reaproveitáveis via hook.
 
 ---
