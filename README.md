@@ -47,16 +47,16 @@ personalizável e cobertura de testes automatizados (unitários, snapshot e end-
 
 ## ✨ Funcionalidades
 
-- **Autenticação com JWT** — login e cadastro com token armazenado em cookie e
+- **Autenticação com JWT**: login e cadastro com token armazenado em cookie e
   validação de expiração no cliente.
-- **Rotas protegidas** — áreas internas (Home, Leads, Perfil) só são acessíveis com
+- **Rotas protegidas**: áreas internas (Home, Leads, Perfil) só são acessíveis com
   sessão válida; usuários não autenticados são redirecionados automaticamente.
-- **Dashboard de vendas** — KPIs de destaque, gráfico de vendas por mês e por ano,
+- **Dashboard de vendas**: KPIs de destaque, gráfico de vendas por mês e por ano,
   ranking de vendedores (top performers) e feed de notícias do setor.
-- **Gestão de leads (CRUD)** — cadastro, listagem e exclusão de leads com validação
+- **Gestão de leads (CRUD)**: cadastro, listagem e exclusão de leads com validação
   de formulário em tempo real.
-- **Perfil do usuário** — visualização e atualização dos dados da conta.
-- **Tema claro/escuro** — alternância de temas com Context API e styled-components.
+- **Perfil do usuário**: visualização e atualização dos dados da conta.
+- **Tema claro/escuro**: alternância de temas com Context API e styled-components.
 - **Validação inteligente de formulários** — regras de e-mail e senha forte
   (comprimento, maiúscula, número e caractere especial) reaproveitáveis via hook.
 
@@ -93,9 +93,9 @@ personalizável e cobertura de testes automatizados (unitários, snapshot e end-
 
 A aplicação conta com testes automatizados em três níveis:
 
-- **Unitários e de snapshot** (Jest + Testing Library) — componentes e funções
+- **Unitários e de snapshot** (Jest + Testing Library): componentes e funções
   utilitárias (conversão de moeda, formatação de texto, expiração de JWT, `pxToRem`).
-- **End-to-end** (Cypress) — cobrindo os fluxos de **login**, **homepage**,
+- **End-to-end** (Cypress): cobrindo os fluxos de **login**, **homepage**,
   **leads**, **perfil** e **cadastro**.
 
 ```bash
