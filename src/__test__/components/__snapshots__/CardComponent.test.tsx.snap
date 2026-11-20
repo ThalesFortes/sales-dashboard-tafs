@@ -3,7 +3,7 @@
 exports[`CardComponent Dark Theme should match the snapshot with alert class 1`] = `
 <DocumentFragment>
   <div
-    class="sc-dTvVRJ dvsfwA alert"
+    class="sc-eCAofS fhJIJl alert"
   />
 </DocumentFragment>
 `;
@@ -11,7 +11,7 @@ exports[`CardComponent Dark Theme should match the snapshot with alert class 1`]
 exports[`CardComponent Dark Theme should match the snapshot with success class 1`] = `
 <DocumentFragment>
   <div
-    class="sc-dTvVRJ dvsfwA success"
+    class="sc-eCAofS fhJIJl success"
   />
 </DocumentFragment>
 `;
@@ -19,7 +19,7 @@ exports[`CardComponent Dark Theme should match the snapshot with success class 1
 exports[`CardComponent Dark Theme should match the snapshot with warning class 1`] = `
 <DocumentFragment>
   <div
-    class="sc-dTvVRJ dvsfwA warning"
+    class="sc-eCAofS fhJIJl warning"
   />
 </DocumentFragment>
 `;
@@ -27,7 +27,7 @@ exports[`CardComponent Dark Theme should match the snapshot with warning class 1
 exports[`CardComponent Dark Theme should match the snapshot without any class 1`] = `
 <DocumentFragment>
   <div
-    class="sc-dTvVRJ dvsfwA"
+    class="sc-eCAofS fhJIJl"
   />
 </DocumentFragment>
 `;
@@ -35,7 +35,7 @@ exports[`CardComponent Dark Theme should match the snapshot without any class 1`
 exports[`CardComponent Light Theme should match the snapshot with alert class 1`] = `
 <DocumentFragment>
   <div
-    class="sc-dTvVRJ dVXMKO alert"
+    class="sc-eCAofS kWdzlX alert"
   />
 </DocumentFragment>
 `;
@@ -43,7 +43,7 @@ exports[`CardComponent Light Theme should match the snapshot with alert class 1`
 exports[`CardComponent Light Theme should match the snapshot with success class 1`] = `
 <DocumentFragment>
   <div
-    class="sc-dTvVRJ dVXMKO success"
+    class="sc-eCAofS kWdzlX success"
   />
 </DocumentFragment>
 `;
@@ -51,7 +51,7 @@ exports[`CardComponent Light Theme should match the snapshot with success class 
 exports[`CardComponent Light Theme should match the snapshot with warning class 1`] = `
 <DocumentFragment>
   <div
-    class="sc-dTvVRJ dVXMKO warning"
+    class="sc-eCAofS kWdzlX warning"
   />
 </DocumentFragment>
 `;
@@ -59,7 +59,7 @@ exports[`CardComponent Light Theme should match the snapshot with warning class 
 exports[`CardComponent Light Theme should match the snapshot without any class 1`] = `
 <DocumentFragment>
   <div
-    class="sc-dTvVRJ dVXMKO"
+    class="sc-eCAofS kWdzlX"
   />
 </DocumentFragment>
 `;

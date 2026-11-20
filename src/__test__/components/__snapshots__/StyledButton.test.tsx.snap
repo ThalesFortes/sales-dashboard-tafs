@@ -3,7 +3,7 @@
 exports[`StyledButton Dark Theme should match the snapshot with alert class 1`] = `
 <DocumentFragment>
   <button
-    class="sc-hjsuWn gWoCUx alert"
+    class="sc-gKzZKs erQabn alert"
   />
 </DocumentFragment>
 `;
@@ -11,7 +11,7 @@ exports[`StyledButton Dark Theme should match the snapshot with alert class 1`] 
 exports[`StyledButton Dark Theme should match the snapshot with borderless-alert class 1`] = `
 <DocumentFragment>
   <button
-    class="sc-hjsuWn gWoCUx borderless-alert"
+    class="sc-gKzZKs erQabn borderless-alert"
   />
 </DocumentFragment>
 `;
@@ -19,7 +19,7 @@ exports[`StyledButton Dark Theme should match the snapshot with borderless-alert
 exports[`StyledButton Dark Theme should match the snapshot with disabled status 1`] = `
 <DocumentFragment>
   <button
-    class="sc-hjsuWn gWoCUx primary"
+    class="sc-gKzZKs erQabn primary"
     disabled=""
   />
 </DocumentFragment>
@@ -28,7 +28,7 @@ exports[`StyledButton Dark Theme should match the snapshot with disabled status 
 exports[`StyledButton Dark Theme should match the snapshot with primary class 1`] = `
 <DocumentFragment>
   <button
-    class="sc-hjsuWn gWoCUx primary"
+    class="sc-gKzZKs erQabn primary"
   />
 </DocumentFragment>
 `;
@@ -36,7 +36,7 @@ exports[`StyledButton Dark Theme should match the snapshot with primary class 1`
 exports[`StyledButton Light Theme should match the snapshot with alert class 1`] = `
 <DocumentFragment>
   <button
-    class="sc-hjsuWn jIIZXR alert"
+    class="sc-gKzZKs iLfyXn alert"
   />
 </DocumentFragment>
 `;
@@ -44,7 +44,7 @@ exports[`StyledButton Light Theme should match the snapshot with alert class 1`]
 exports[`StyledButton Light Theme should match the snapshot with borderless-alert class 1`] = `
 <DocumentFragment>
   <button
-    class="sc-hjsuWn jIIZXR borderless-alert"
+    class="sc-gKzZKs iLfyXn borderless-alert"
   />
 </DocumentFragment>
 `;
@@ -52,7 +52,7 @@ exports[`StyledButton Light Theme should match the snapshot with borderless-aler
 exports[`StyledButton Light Theme should match the snapshot with disabled status 1`] = `
 <DocumentFragment>
   <button
-    class="sc-hjsuWn jIIZXR primary"
+    class="sc-gKzZKs iLfyXn primary"
     disabled=""
   />
 </DocumentFragment>
@@ -61,7 +61,7 @@ exports[`StyledButton Light Theme should match the snapshot with disabled status
 exports[`StyledButton Light Theme should match the snapshot with primary class 1`] = `
 <DocumentFragment>
   <button
-    class="sc-hjsuWn jIIZXR primary"
+    class="sc-gKzZKs iLfyXn primary"
   />
 </DocumentFragment>
 `;
