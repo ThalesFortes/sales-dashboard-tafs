@@ -7,6 +7,9 @@ const axioInstance = axios.create({
   baseURL: `${import.meta.env.VITE_API_BASE_URL}/`,
 })
 
+const statusFromError = (e: unknown): number =>
+  (axios.isAxiosError(e) && e.response?.status) || 500
+
 if (import.meta.env.VITE_USE_MOCK_API !== "false") {
   setupMockApi(axioInstance)
 }
@@ -39,8 +42,8 @@ export const usePost = <T, P>(endpoint: string, withAuth: boolean) => {
         headers: headers,
       })
       setData(response.data)
-    } catch (e: any) {
-      setError(e.response.status ?? 500)
+    } catch (e) {
+      setError(statusFromError(e))
     } finally {
       setLoading(false)
     }
@@ -75,8 +78,8 @@ export const useGet = <T>(
         ...config,
       })
       setData(response.data)
-    } catch (e: any) {
-      setError(e.response.status ?? 500)
+    } catch (e) {
+      setError(statusFromError(e))
     } finally {
       if (!silent) setLoading(false)
     }
@@ -117,8 +120,8 @@ export const usePut = <T>(endpoint: string) => {
         },
       })
       setData(response.data)
-    } catch (e: any) {
-      setError(e.response.status ?? 500)
+    } catch (e) {
+      setError(statusFromError(e))
     } finally {
       setLoading(false)
     }
@@ -144,9 +147,9 @@ export const useDelete = <T>(endpoint: string) => {
       })
       setData(response.data)
       return response.data
-    } catch (e: any) {
+    } catch (e) {
       console.error("DELETE error:", e)
-      throw e.response?.status ?? 500
+      throw statusFromError(e)
     } finally {
       setLoading(false)
     }

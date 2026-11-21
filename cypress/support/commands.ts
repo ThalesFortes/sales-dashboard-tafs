@@ -1,5 +1,6 @@
 /// <reference types="cypress" />
 
+// eslint-disable-next-line @typescript-eslint/no-namespace -- extensão de tipos do Cypress exige namespace
 declare namespace Cypress {
     interface Chainable {
         login(email: string, password: string):Chainable<void>

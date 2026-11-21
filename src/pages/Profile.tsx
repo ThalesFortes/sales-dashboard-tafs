@@ -91,7 +91,7 @@ function Profile() {
         alert("Perfil deletado com sucesso!")
         Cookies.remove("Authorization")
         window.location.href = "/"
-      } catch (e) {
+      } catch {
         alert(
           "Não foi possível realizar a operação entre em contato com nosso suporte!"
         )

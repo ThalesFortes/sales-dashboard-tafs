@@ -3,6 +3,7 @@ import { ThemeProvider } from "styled-components"
 import { darkTheme, lightTheme } from "@/styles"
 import type { AppThemeContextProps } from "@/types"
 
+// eslint-disable-next-line react-refresh/only-export-components -- contexto e provider no mesmo arquivo de propósito
 export const AppThemeContext = createContext<AppThemeContextProps | undefined>(
   undefined
 )

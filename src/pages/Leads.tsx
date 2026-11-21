@@ -67,7 +67,7 @@ function Leads() {
         await leadsDeleteData({ params: { id: id } })
         alert("leads deletado com sucesso!")
         getLeads()
-      } catch (e) {
+      } catch {
         alert(
           "Não foi possivel realizar essa operação por favor contate nosso suporte"
         )
